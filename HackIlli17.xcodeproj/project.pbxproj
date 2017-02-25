@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB8BAD1C1E6177E600727928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BAD1B1E6177E600727928 /* AppDelegate.swift */; };
+		AB8BAD1E1E6177E600727928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8BAD1D1E6177E600727928 /* ViewController.swift */; };
+		AB8BAD211E6177E600727928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8BAD1F1E6177E600727928 /* Main.storyboard */; };
+		AB8BAD231E6177E600727928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB8BAD221E6177E600727928 /* Assets.xcassets */; };
+		AB8BAD261E6177E600727928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB8BAD241E6177E600727928 /* LaunchScreen.storyboard */; };
+		AB8BAD521E61857800727928 /* libAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB8BAD511E61857800727928 /* libAR.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB8BAD181E6177E600727928 /* HackIlli17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackIlli17.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8BAD1B1E6177E600727928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB8BAD1D1E6177E600727928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB8BAD201E6177E600727928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB8BAD221E6177E600727928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB8BAD251E6177E600727928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB8BAD271E6177E600727928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB8BAD491E61780600727928 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		AB8BAD4C1E61850B00727928 /* libAR2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAR2.a; path = "ARToolKit/build/Debug-iphoneos/libAR2.a"; sourceTree = "<group>"; };
+		AB8BAD4E1E61851900727928 /* HackIlli17-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackIlli17-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB8BAD511E61857800727928 /* libAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAR.a; path = "ARToolKit/build/Debug-iphoneos/libAR.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB8BAD151E6177E600727928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8BAD521E61857800727928 /* libAR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB8BAD0F1E6177E600727928 = {
+			isa = PBXGroup;
+			children = (
+				AB8BAD491E61780600727928 /* README.md */,
+				AB8BAD1A1E6177E600727928 /* HackIlli17 */,
+				AB8BAD191E6177E600727928 /* Products */,
+				AB8BAD4B1E61850A00727928 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB8BAD191E6177E600727928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB8BAD181E6177E600727928 /* HackIlli17.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB8BAD1A1E6177E600727928 /* HackIlli17 */ = {
+			isa = PBXGroup;
+			children = (
+				AB8BAD1B1E6177E600727928 /* AppDelegate.swift */,
+				AB8BAD1D1E6177E600727928 /* ViewController.swift */,
+				AB8BAD1F1E6177E600727928 /* Main.storyboard */,
+				AB8BAD221E6177E600727928 /* Assets.xcassets */,
+				AB8BAD241E6177E600727928 /* LaunchScreen.storyboard */,
+				AB8BAD271E6177E600727928 /* Info.plist */,
+				AB8BAD4E1E61851900727928 /* HackIlli17-Bridging-Header.h */,
+			);
+			path = HackIlli17;
+			sourceTree = "<group>";
+		};
+		AB8BAD4B1E61850A00727928 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB8BAD511E61857800727928 /* libAR.a */,
+				AB8BAD4C1E61850B00727928 /* libAR2.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB8BAD171E6177E600727928 /* HackIlli17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB8BAD401E6177E700727928 /* Build configuration list for PBXNativeTarget "HackIlli17" */;
+			buildPhases = (
+				AB8BAD141E6177E600727928 /* Sources */,
+				AB8BAD151E6177E600727928 /* Frameworks */,
+				AB8BAD161E6177E600727928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackIlli17;
+			productName = HackIlli17;
+			productReference = AB8BAD181E6177E600727928 /* HackIlli17.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB8BAD101E6177E600727928 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jonathan Chan";
+				TargetAttributes = {
+					AB8BAD171E6177E600727928 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9Z4VM84YX9;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AB8BAD131E6177E600727928 /* Build configuration list for PBXProject "HackIlli17" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB8BAD0F1E6177E600727928;
+			productRefGroup = AB8BAD191E6177E600727928 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB8BAD171E6177E600727928 /* HackIlli17 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB8BAD161E6177E600727928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8BAD261E6177E600727928 /* LaunchScreen.storyboard in Resources */,
+				AB8BAD231E6177E600727928 /* Assets.xcassets in Resources */,
+				AB8BAD211E6177E600727928 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB8BAD141E6177E600727928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8BAD1E1E6177E600727928 /* ViewController.swift in Sources */,
+				AB8BAD1C1E6177E600727928 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB8BAD1F1E6177E600727928 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB8BAD201E6177E600727928 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB8BAD241E6177E600727928 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB8BAD251E6177E600727928 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB8BAD3E1E6177E700727928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB8BAD3F1E6177E700727928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB8BAD411E6177E700727928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ARToolKit/include/";
+				INFOPLIST_FILE = HackIlli17/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolKit/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.HackIlli17;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackIlli17/HackIlli17-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AB8BAD421E6177E700727928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ARToolKit/include/";
+				INFOPLIST_FILE = HackIlli17/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolKit/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.HackIlli17;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackIlli17/HackIlli17-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB8BAD131E6177E600727928 /* Build configuration list for PBXProject "HackIlli17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8BAD3E1E6177E700727928 /* Debug */,
+				AB8BAD3F1E6177E700727928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8BAD401E6177E700727928 /* Build configuration list for PBXNativeTarget "HackIlli17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB8BAD411E6177E700727928 /* Debug */,
+				AB8BAD421E6177E700727928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB8BAD101E6177E600727928 /* Project object */;
+}
