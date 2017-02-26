@@ -9,4 +9,7 @@ Open an issue on the repository
 Style:
 Follow Vuforia rules!
 
+Recognition and New Feature Suggestions
+Open an issue on the repository
+
 Thank you~
