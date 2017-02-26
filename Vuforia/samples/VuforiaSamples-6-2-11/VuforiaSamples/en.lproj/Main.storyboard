@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Dox-ur-9Yg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="aXr-4L-K6Q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -206,6 +206,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yoY-MK-6jy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-683" y="158"/>
+        </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="aAg-0b-Qx4">
+            <objects>
+                <viewController id="aXr-4L-K6Q" customClass="LaunchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WJV-M9-eLE"/>
+                        <viewControllerLayoutGuide type="bottom" id="w8K-OQ-CqS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qiE-hG-5ZY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="Dox-ur-9Yg" kind="modal" identifier="FinishLaunching" id="Oc0-qL-cme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxk-Ha-LYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="-718"/>
         </scene>
         <!--About Sample-->
         <scene sceneID="MCG-K3-xGE">
@@ -1248,16 +1269,16 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="58y-Nt-0gu"/>
+        <segue reference="dhW-8i-ufv"/>
+        <segue reference="6Cc-eg-0v6"/>
+        <segue reference="JlR-mr-0vY"/>
         <segue reference="7rH-Tb-5v9"/>
         <segue reference="ewa-aG-W1n"/>
-        <segue reference="JlR-mr-0vY"/>
-        <segue reference="6Cc-eg-0v6"/>
         <segue reference="aFF-4h-YVs"/>
         <segue reference="ieH-7f-bjc"/>
         <segue reference="Owc-PA-9wM"/>
         <segue reference="Bpg-cq-vUV"/>
-        <segue reference="dhW-8i-ufv"/>
         <segue reference="vYZ-t0-6CS"/>
+        <segue reference="Oc0-qL-cme"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -23,6 +23,10 @@
 		8F8B90241CECD0D4000A7BAD /* VM_about.html in Resources */ = {isa = PBXBuildFile; fileRef = 8F8B901B1CECD0D4000A7BAD /* VM_about.html */; };
 		8F8B90271CECD0D4000A7BAD /* vumark_texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F8B901E1CECD0D4000A7BAD /* vumark_texture.png */; };
 		8F8B90291CECE153000A7BAD /* SimpleWithColor.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 8F8B90281CECE153000A7BAD /* SimpleWithColor.fragsh */; };
+		ABF78F7E1E62EE52002497A1 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF78F7D1E62EE52002497A1 /* LaunchViewController.m */; };
+		ABF78F821E62F36C002497A1 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F811E62F36C002497A1 /* LaunchImage.png */; };
+		ABF78F841E62F371002497A1 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F831E62F371002497A1 /* AppIcon.png */; };
+		ABF78F861E62F56E002497A1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F851E62F56E002497A1 /* Launch Screen.storyboard */; };
 		D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EB1A1B4AA20041ECF3 /* main.m */; };
 		D21B07EF1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EE1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m */; };
 		D21B07F71A1B4AA20041ECF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B07F61A1B4AA20041ECF3 /* Images.xcassets */; };
@@ -154,6 +158,11 @@
 		8F8B901B1CECD0D4000A7BAD /* VM_about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = VM_about.html; sourceTree = "<group>"; };
 		8F8B901E1CECD0D4000A7BAD /* vumark_texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vumark_texture.png; sourceTree = "<group>"; };
 		8F8B90281CECE153000A7BAD /* SimpleWithColor.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleWithColor.fragsh; path = Classes/SampleApplication/shaders/SimpleWithColor.fragsh; sourceTree = "<group>"; };
+		ABF78F7C1E62EE52002497A1 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		ABF78F7D1E62EE52002497A1 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		ABF78F811E62F36C002497A1 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage.png; path = Resources/LaunchImage.png; sourceTree = "<group>"; };
+		ABF78F831E62F371002497A1 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = Resources/AppIcon.png; sourceTree = "<group>"; };
+		ABF78F851E62F56E002497A1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D21B07E61A1B4AA20041ECF3 /* Vuforia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vuforia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21B07EB1A1B4AA20041ECF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D21B07ED1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VuforiaSamplesAppDelegate.h; sourceTree = "<group>"; };
@@ -365,6 +374,7 @@
 		D21B07DD1A1B4AA10041ECF3 = {
 			isa = PBXGroup;
 			children = (
+				ABF78F851E62F56E002497A1 /* Launch Screen.storyboard */,
 				D21B087B1A1B6C710041ECF3 /* Frameworks */,
 				D21B07E81A1B4AA20041ECF3 /* VuforiaSamples */,
 				D21B07E71A1B4AA20041ECF3 /* Products */,
@@ -382,6 +392,8 @@
 		D21B07E81A1B4AA20041ECF3 /* VuforiaSamples */ = {
 			isa = PBXGroup;
 			children = (
+				ABF78F7C1E62EE52002497A1 /* LaunchViewController.h */,
+				ABF78F7D1E62EE52002497A1 /* LaunchViewController.m */,
 				D21B08111A1B4C500041ECF3 /* Classes */,
 				D21B08151A1B4D2A0041ECF3 /* Resources */,
 				D21B07F61A1B4AA20041ECF3 /* Images.xcassets */,
@@ -469,6 +481,8 @@
 		D21B08151A1B4D2A0041ECF3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABF78F831E62F371002497A1 /* AppIcon.png */,
+				ABF78F811E62F36C002497A1 /* LaunchImage.png */,
 				D21B08161A1B4D320041ECF3 /* Assets */,
 			);
 			name = Resources;
@@ -802,7 +816,7 @@
 				TargetAttributes = {
 					D21B07E51A1B4AA20041ECF3 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = V7MEJ473R2;
+						DevelopmentTeam = 9Z4VM84YX9;
 					};
 				};
 			};
@@ -845,12 +859,14 @@
 				8F8B901F1CECD0D4000A7BAD /* card_info.png in Resources */,
 				8F8B90241CECD0D4000A7BAD /* VM_about.html in Resources */,
 				FB7A43411A8E376B0068CF5E /* button_cancel_pressed@2x.png in Resources */,
+				ABF78F841E62F371002497A1 /* AppIcon.png in Resources */,
 				18EB634C1ACC70F200EF1C28 /* Localizable.strings in Resources */,
 				D23617831A933AD7009A2192 /* VB.png in Resources */,
 				FB7A43441A8E376B0068CF5E /* custom_toolbar_texture.png in Resources */,
 				FB7A43301A8E376B0068CF5E /* FlakesBox.dat in Resources */,
 				FB7A433C1A8E376B0068CF5E /* TextureTeapotRed.png in Resources */,
 				FB7A43381A8E376B0068CF5E /* Vuforia-English-word.vwl in Resources */,
+				ABF78F821E62F36C002497A1 /* LaunchImage.png in Resources */,
 				FB7A43461A8E376B0068CF5E /* icon_camera.png in Resources */,
 				FB7A43531A8E41840068CF5E /* IT.png in Resources */,
 				FB7A433B1A8E376B0068CF5E /* TextureTeapotGreen.png in Resources */,
@@ -890,6 +906,7 @@
 				FB7A43251A8E376B0068CF5E /* TextureTransparent.png in Resources */,
 				FB5190BC1A9F5FA500729216 /* OR.png in Resources */,
 				8F8B90231CECD0D4000A7BAD /* VM.png in Resources */,
+				ABF78F861E62F56E002497A1 /* Launch Screen.storyboard in Resources */,
 				D21B07F71A1B4AA20041ECF3 /* Images.xcassets in Resources */,
 				FB7A432C1A8E376B0068CF5E /* StonesAndChips.dat in Resources */,
 				FB7A432F1A8E376B0068CF5E /* Tarmac.xml in Resources */,
@@ -940,6 +957,7 @@
 				D249EFEA1A91F54300B56674 /* VirtualButtonsEAGLView.mm in Sources */,
 				8F8B90141CECCC94000A7BAD /* VuMarkViewController.mm in Sources */,
 				D23617781A932C35009A2192 /* UserDefinedTargetsEAGLView.mm in Sources */,
+				ABF78F7E1E62EE52002497A1 /* LaunchViewController.m in Sources */,
 				D29B5CEB1A92556300024A6C /* TextRecoViewController.mm in Sources */,
 				FB7A435F1A8E47540068CF5E /* CylinderTargetsEAGLView.mm in Sources */,
 				8F8B90121CECCC94000A7BAD /* VuMarkEAGLView.mm in Sources */,
@@ -1052,20 +1070,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = V7MEJ473R2;
+				DEVELOPMENT_TEAM = 9Z4VM84YX9;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = ../../build/include;
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.Vuforia;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.sample.Vuforia;
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
@@ -1074,21 +1090,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 21;
-				DEVELOPMENT_TEAM = V7MEJ473R2;
+				DEVELOPMENT_TEAM = 9Z4VM84YX9;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = ../../build/include;
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.Vuforia;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.sample.Vuforia;
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
