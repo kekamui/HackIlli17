@@ -50,10 +50,7 @@ namespace {
 
     // Teapot texture filenames
     const char* textureFilenames[] = {
-        "TextureTeapotBrass.png",
-        "TextureTeapotBlue.png",
-        "TextureTeapotRed.png",
-        "building_texture.jpeg"
+        "TextureTeapotBrass.png"
     };
     
     // Model scale factor
@@ -128,7 +125,7 @@ namespace {
         offTargetTrackingEnabled = NO;
         sampleAppRenderer = [[SampleAppRenderer alloc]initWithSampleAppRendererControl:self deviceMode:Vuforia::Device::MODE_AR stereo:false nearPlane:0.01 farPlane:5];
         
-        [self loadBuildingsModel];
+//        [self loadBuildingsModel];
         [self initShaders];
         
         // we initialize the rendering method of the SampleAppRenderer
@@ -189,10 +186,10 @@ namespace {
     offTargetTrackingEnabled = enabled;
 }
 
-- (void) loadBuildingsModel {
-    buildingModel = [[SampleApplication3DModel alloc] initWithTxtResourceName:@"buildings"];
-    [buildingModel read];
-}
+//- (void) loadBuildingsModel {
+//    buildingModel = [[SampleApplication3DModel alloc] initWithTxtResourceName:@"buildings"];
+//    [buildingModel read];
+//}
 
 
 - (void) updateRenderingPrimitives
@@ -250,27 +247,27 @@ namespace {
         // OpenGL 2
         Vuforia::Matrix44F modelViewProjection;
         
-        if (offTargetTrackingEnabled) {
-            SampleApplicationUtils::rotatePoseMatrix(90, 1, 0, 0,&modelViewMatrix.data[0]);
-            SampleApplicationUtils::scalePoseMatrix(kObjectScaleOffTargetTracking, kObjectScaleOffTargetTracking, kObjectScaleOffTargetTracking, &modelViewMatrix.data[0]);
-        } else {
+//        if (offTargetTrackingEnabled) {
+//            SampleApplicationUtils::rotatePoseMatrix(90, 1, 0, 0,&modelViewMatrix.data[0]);
+//            SampleApplicationUtils::scalePoseMatrix(kObjectScaleOffTargetTracking, kObjectScaleOffTargetTracking, kObjectScaleOffTargetTracking, &modelViewMatrix.data[0]);
+//        } else {
             SampleApplicationUtils::translatePoseMatrix(0.0f, 0.0f, kObjectScaleNormal, &modelViewMatrix.data[0]);
             SampleApplicationUtils::scalePoseMatrix(kObjectScaleNormal, kObjectScaleNormal, kObjectScaleNormal, &modelViewMatrix.data[0]);
-        }
+//        }
         
         SampleApplicationUtils::multiplyMatrix(&projectionMatrix.data[0], &modelViewMatrix.data[0], &modelViewProjection.data[0]);
         
         glUseProgram(shaderProgramID);
         
-        if (offTargetTrackingEnabled) {
-            glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)buildingModel.vertices);
-            glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)buildingModel.normals);
-            glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)buildingModel.texCoords);
-        } else {
+//        if (offTargetTrackingEnabled) {
+//            glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)buildingModel.vertices);
+//            glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)buildingModel.normals);
+//            glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)buildingModel.texCoords);
+//        } else {
             glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)teapotVertices);
             glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)teapotNormals);
             glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0, (const GLvoid*)teapotTexCoords);
-        }
+//        }
         
         glEnableVertexAttribArray(vertexHandle);
         glEnableVertexAttribArray(normalHandle);
@@ -285,19 +282,19 @@ namespace {
         
         glActiveTexture(GL_TEXTURE0);
         
-        if (offTargetTrackingEnabled) {
-            glBindTexture(GL_TEXTURE_2D, augmentationTexture[3].textureID);
-        } else {
+//        if (offTargetTrackingEnabled) {
+//            glBindTexture(GL_TEXTURE_2D, augmentationTexture[3].textureID);
+//        } else {
             glBindTexture(GL_TEXTURE_2D, augmentationTexture[targetIndex].textureID);
-        }
+//        }
         glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE, (const GLfloat*)&modelViewProjection.data[0]);
         glUniform1i(texSampler2DHandle, 0 /*GL_TEXTURE0*/);
         
-        if (offTargetTrackingEnabled) {
-            glDrawArrays(GL_TRIANGLES, 0, (int)buildingModel.numVertices);
-        } else {
-            glDrawElements(GL_TRIANGLES, NUM_TEAPOT_OBJECT_INDEX, GL_UNSIGNED_SHORT, (const GLvoid*)teapotIndices);
-        }
+//        if (offTargetTrackingEnabled) {
+//            glDrawArrays(GL_TRIANGLES, 0, (int)buildingModel.numVertices);
+//        } else {
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT, (const GLvoid*)teapotIndices);
+//        }
         
         glDisableVertexAttribArray(vertexHandle);
         glDisableVertexAttribArray(normalHandle);

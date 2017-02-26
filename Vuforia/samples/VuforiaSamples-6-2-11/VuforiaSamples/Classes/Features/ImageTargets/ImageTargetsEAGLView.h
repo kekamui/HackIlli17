@@ -17,7 +17,7 @@ countries.
 #import "SampleGLResourceHandler.h"
 #import "SampleAppRenderer.h"
 
-#define kNumAugmentationTextures 4
+#define kNumAugmentationTextures 1
 
 
 // EAGLView is a subclass of UIView and conforms to the informal protocol
