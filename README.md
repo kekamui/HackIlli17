@@ -18,7 +18,7 @@ The user can point their phone around their room and tag different objects such 
 
 ## Build Instructions
 * Open the `.xcworkspace` file in Xcode and change the Bundle Identifier and Team.
-* Build for actual iOS device.
+* Build for actual iOS device (Vuforia does not support iOS simulators).
 
 ## Front-end Interface Concept
 * Prototype link here: https://xd.adobe.com/view/442bea04-6930-4b4d-a68b-f9576eebc3d1/
