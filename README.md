@@ -11,7 +11,7 @@ Ultimately, our goal is for this app to:
 * have a database to support multiple users and store their information.
 
 ## Usage
-Concept: he user can point their phone around their room and tag different objects such as:
+Concept: the user can point their phone around their room and tag different objects such as:
 * desk: set a reminder to study for a math test on Thursday.
 * bed: note that an alarm was set for 8:30 am the next day.
 * window: note the temperature of that day and suggestions such as needing warm clothes for a cold day or an umbrella for a rainy day.
