@@ -1,5 +1,5 @@
 //
-//  ViewController.m
+//  ViewController.mm
 //  HackIlli17
 //
 //  Created by Jonathan Chan on 2017-02-25.
@@ -7,8 +7,19 @@
 //
 
 #import "ViewController.h"
+#import <Vuforia/Vuforia.h>
+#import <Vuforia/DataSet.h>
 
 @interface ViewController ()
+
+@property (nonatomic, nullable) Vuforia::DataSet *dataSet;
+
+@property (nonatomic) BOOL extendedTrackingEnabled;
+@property (nonatomic) BOOL continuousAutofocusEnabled;
+@property (nonatomic) BOOL flashEnabled;
+@property (nonatomic) BOOL frontCameraEnabled;
+
+@property (strong, nonatomic, nullable)
 
 @end
 

@@ -15,6 +15,9 @@
 		AB3879471E61E0ED00F1CABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3879451E61E0ED00F1CABE /* LaunchScreen.storyboard */; };
 		AB387A0C1E61E23200F1CABE /* libVuforia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB387A061E61E23200F1CABE /* libVuforia.a */; };
 		AB387A0D1E61E23200F1CABE /* license_3rdpartynotice.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB387A081E61E23200F1CABE /* license_3rdpartynotice.txt */; };
+		AB387B521E62948500F1CABE /* ImageTargetsView.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB387B511E62948500F1CABE /* ImageTargetsView.mm */; };
+		AB387B551E6294CB00F1CABE /* Texture.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB387B541E6294CB00F1CABE /* Texture.mm */; };
+		AB387B581E629ACB00F1CABE /* Session.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB387B571E629ACB00F1CABE /* Session.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +121,12 @@
 		AB387A081E61E23200F1CABE /* license_3rdpartynotice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license_3rdpartynotice.txt; sourceTree = "<group>"; };
 		AB387A091E61E23200F1CABE /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		AB387A0B1E61E23200F1CABE /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		AB387B501E62948500F1CABE /* ImageTargetsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTargetsView.h; sourceTree = "<group>"; };
+		AB387B511E62948500F1CABE /* ImageTargetsView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageTargetsView.mm; sourceTree = "<group>"; };
+		AB387B531E6294CB00F1CABE /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
+		AB387B541E6294CB00F1CABE /* Texture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Texture.mm; sourceTree = "<group>"; };
+		AB387B561E629ACB00F1CABE /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		AB387B571E629ACB00F1CABE /* Session.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Session.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +166,7 @@
 				AB38793B1E61E0ED00F1CABE /* AppDelegate.m */,
 				AB38793D1E61E0ED00F1CABE /* ViewController.h */,
 				AB38793E1E61E0ED00F1CABE /* ViewController.mm */,
+				AB387B4F1E62945400F1CABE /* Supporting Classes */,
 				AB3879401E61E0ED00F1CABE /* Main.storyboard */,
 				AB3879431E61E0ED00F1CABE /* Assets.xcassets */,
 				AB3879451E61E0ED00F1CABE /* LaunchScreen.storyboard */,
@@ -326,6 +336,19 @@
 			path = samples;
 			sourceTree = "<group>";
 		};
+		AB387B4F1E62945400F1CABE /* Supporting Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB387B501E62948500F1CABE /* ImageTargetsView.h */,
+				AB387B511E62948500F1CABE /* ImageTargetsView.mm */,
+				AB387B531E6294CB00F1CABE /* Texture.h */,
+				AB387B541E6294CB00F1CABE /* Texture.mm */,
+				AB387B561E629ACB00F1CABE /* Session.h */,
+				AB387B571E629ACB00F1CABE /* Session.mm */,
+			);
+			name = "Supporting Classes";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -400,7 +423,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB38793F1E61E0ED00F1CABE /* ViewController.mm in Sources */,
+				AB387B521E62948500F1CABE /* ImageTargetsView.mm in Sources */,
+				AB387B581E629ACB00F1CABE /* Session.mm in Sources */,
 				AB38793C1E61E0ED00F1CABE /* AppDelegate.m in Sources */,
+				AB387B551E6294CB00F1CABE /* Texture.mm in Sources */,
 				AB3879391E61E0ED00F1CABE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
