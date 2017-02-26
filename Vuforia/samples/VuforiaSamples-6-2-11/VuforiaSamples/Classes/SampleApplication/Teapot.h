@@ -37,19 +37,19 @@ countries.
 
 static const float teapotVertices[] =
 {
-    -5, -5, 0.0, 5, -5, 0.0, 5, 5, 0.0, -5, 5, 0.0,
+    -24, -24, 0.0, 24, -24, 0.0, 24, 24, 0.0, -24, 24, 0.0,
 };
 static const float teapotTexCoords[] =
 {
-    0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0
+    0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0,
 };
 static const float teapotNormals[] =
 {
-    0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0
+    0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0,
 };
 static const unsigned short teapotIndices[] =
 {
-    0, 1, 2, 0, 2, 3
+    0, 1, 2, 0, 2, 3,
 };
 
 #endif // _VUFORIA_TEAPOT_OBJECT_H_

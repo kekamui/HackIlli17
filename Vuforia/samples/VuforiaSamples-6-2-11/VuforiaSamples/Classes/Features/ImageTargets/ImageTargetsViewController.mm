@@ -72,7 +72,7 @@ countries.
     // double tap used to also trigger the menu
     UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget: self action:@selector(doubleTapGestureAction:)];
     doubleTap.numberOfTapsRequired = 2;
-    [self.view addGestureRecognizer:doubleTap];
+//    [self.view addGestureRecognizer:doubleTap];
     
     // a single tap will trigger a single autofocus operation
     tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(autofocus:)];
@@ -82,7 +82,7 @@ countries.
     
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeGestureAction:)];
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
-    [self.view addGestureRecognizer:swipeRight];
+//    [self.view addGestureRecognizer:swipeRight];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(dismissARViewController)
@@ -136,7 +136,7 @@ countries.
     
     // Do any additional setup after loading the view.
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-    [self.view addGestureRecognizer:tapGestureRecognizer];
+//    [self.view addGestureRecognizer:tapGestureRecognizer];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
