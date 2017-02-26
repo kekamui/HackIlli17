@@ -23,6 +23,7 @@ countries.
 @interface ImageTargetsViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *ARViewPlaceholder;
+@property (strong, nonatomic) UIButton *caretView;
 
 @end
 
@@ -81,8 +82,8 @@ countries.
     }
     
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeGestureAction:)];
-    [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
-//    [self.view addGestureRecognizer:swipeRight];
+    [swipeRight setDirection:UISwipeGestureRecognizerDirectionDown];
+    [self.view addGestureRecognizer:swipeRight];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(dismissARViewController)
@@ -136,7 +137,17 @@ countries.
     
     // Do any additional setup after loading the view.
     [self.navigationController setNavigationBarHidden:YES animated:NO];
-//    [self.view addGestureRecognizer:tapGestureRecognizer];
+    [self.view addGestureRecognizer:tapGestureRecognizer];
+    
+    self.caretView = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.caretView setImage:[UIImage imageWithContentsOfFile:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Caret@3x.png"]] forState:UIControlStateNormal];
+    [self.caretView addTarget:self action:@selector(swipeGestureAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.caretView];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.caretView.frame = CGRectMake((self.view.frame.size.width - 25) / 2, 10, 25, 25);
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -528,9 +539,10 @@ countries.
 
 - (void)swipeGestureAction:(UISwipeGestureRecognizer*)gesture
 {
-    if (!self.showingMenu) {
-        [self performSegueWithIdentifier:@"PresentMenu" sender:self];
-    }
+//    if (!self.showingMenu) {
+//        [self performSegueWithIdentifier:@"PresentMenu" sender:self];
+//    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

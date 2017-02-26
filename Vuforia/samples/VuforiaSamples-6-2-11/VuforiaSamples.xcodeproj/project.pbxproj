@@ -27,6 +27,7 @@
 		ABF78F821E62F36C002497A1 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F811E62F36C002497A1 /* LaunchImage.png */; };
 		ABF78F841E62F371002497A1 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F831E62F371002497A1 /* AppIcon.png */; };
 		ABF78F861E62F56E002497A1 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F851E62F56E002497A1 /* Launch Screen.storyboard */; };
+		ABF78F8A1E62FAA6002497A1 /* Caret@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF78F891E62FAA6002497A1 /* Caret@3x.png */; };
 		D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EB1A1B4AA20041ECF3 /* main.m */; };
 		D21B07EF1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EE1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m */; };
 		D21B07F71A1B4AA20041ECF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B07F61A1B4AA20041ECF3 /* Images.xcassets */; };
@@ -163,6 +164,7 @@
 		ABF78F811E62F36C002497A1 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage.png; path = Resources/LaunchImage.png; sourceTree = "<group>"; };
 		ABF78F831E62F371002497A1 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = Resources/AppIcon.png; sourceTree = "<group>"; };
 		ABF78F851E62F56E002497A1 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ABF78F891E62FAA6002497A1 /* Caret@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Caret@3x.png"; path = "Resources/Caret@3x.png"; sourceTree = "<group>"; };
 		D21B07E61A1B4AA20041ECF3 /* Vuforia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vuforia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21B07EB1A1B4AA20041ECF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D21B07ED1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VuforiaSamplesAppDelegate.h; sourceTree = "<group>"; };
@@ -483,6 +485,7 @@
 			children = (
 				ABF78F831E62F371002497A1 /* AppIcon.png */,
 				ABF78F811E62F36C002497A1 /* LaunchImage.png */,
+				ABF78F891E62FAA6002497A1 /* Caret@3x.png */,
 				D21B08161A1B4D320041ECF3 /* Assets */,
 			);
 			name = Resources;
@@ -876,6 +879,7 @@
 				FB7A432D1A8E376B0068CF5E /* StonesAndChips.xml in Resources */,
 				D2DC72BA1A8F5F9200A62FCD /* MT.png in Resources */,
 				FB7A43351A8E376B0068CF5E /* CubeWireframe.png in Resources */,
+				ABF78F8A1E62FAA6002497A1 /* Caret@3x.png in Resources */,
 				FB7A432E1A8E376B0068CF5E /* Tarmac.dat in Resources */,
 				FB7A43201A8E376B0068CF5E /* CR_about.html in Resources */,
 				FB7A43421A8E376B0068CF5E /* button_main.png in Resources */,
