@@ -7,8 +7,8 @@ https://library.vuforia.com/articles/Training/Getting-Started-with-the-Vuforia-T
 * Open an issue on the repository
 
 ## How to get started:
-* Open the .xcworkspace file in Xcode and change the Bundle Identifier and Team.
-* Build for actual iOS device.
+* Open the `.xcworkspace` file in Xcode and change the Bundle Identifier and Team.
+* Build for actual iOS device (Vuforia does not support iOS simulators).
 
 ## Style:
 * Follow Vuforia rules!
