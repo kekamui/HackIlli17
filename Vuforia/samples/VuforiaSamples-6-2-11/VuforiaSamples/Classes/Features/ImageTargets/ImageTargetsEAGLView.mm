@@ -282,6 +282,10 @@ namespace {
             targetIndex = 1;
         else if (!strcmp(trackable.getName(), "tarmac"))
             targetIndex = 2;
+        else if (!strcmp(trackable.getName(), "room"))
+            targetIndex = 3;
+        else if (!strcmp(trackable.getName(), "bed"))
+            targetIndex = 4;
         
         glActiveTexture(GL_TEXTURE0);
         

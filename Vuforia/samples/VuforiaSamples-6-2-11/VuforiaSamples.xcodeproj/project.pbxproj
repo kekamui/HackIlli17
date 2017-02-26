@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18EB634C1ACC70F200EF1C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EB634B1ACC70F200EF1C28 /* Localizable.strings */; };
+		8C40F2C91E624B040073E4A7 /* AR.dat in Resources */ = {isa = PBXBuildFile; fileRef = 8C40F2C71E624B040073E4A7 /* AR.dat */; };
+		8C40F2CA1E624B040073E4A7 /* AR.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8C40F2C81E624B040073E4A7 /* AR.xml */; };
 		8F467BD01D18B02E00682E4C /* Background.fragsh in Resources */ = {isa = PBXBuildFile; fileRef = 8F467BCE1D18B02E00682E4C /* Background.fragsh */; };
 		8F467BD11D18B02E00682E4C /* Background.vertsh in Resources */ = {isa = PBXBuildFile; fileRef = 8F467BCF1D18B02E00682E4C /* Background.vertsh */; };
 		8F6A13C41CD8044D0010F46D /* scanline.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F6A13C21CD8044D0010F46D /* scanline.png */; };
@@ -135,6 +137,8 @@
 
 /* Begin PBXFileReference section */
 		18EB634B1ACC70F200EF1C28 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8C40F2C71E624B040073E4A7 /* AR.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = AR.dat; path = media/ImageTargets/AR.dat; sourceTree = SOURCE_ROOT; };
+		8C40F2C81E624B040073E4A7 /* AR.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = AR.xml; path = media/ImageTargets/AR.xml; sourceTree = SOURCE_ROOT; };
 		8F467BCE1D18B02E00682E4C /* Background.fragsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Background.fragsh; path = Classes/SampleApplication/shaders/Background.fragsh; sourceTree = "<group>"; };
 		8F467BCF1D18B02E00682E4C /* Background.vertsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Background.vertsh; path = Classes/SampleApplication/shaders/Background.vertsh; sourceTree = "<group>"; };
 		8F6A13C21CD8044D0010F46D /* scanline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanline.png; sourceTree = "<group>"; };
@@ -673,6 +677,8 @@
 				FB7A42F81A8E376B0068CF5E /* IT_about.html */,
 				FB7A42F91A8E376B0068CF5E /* StonesAndChips.dat */,
 				FB7A42FA1A8E376B0068CF5E /* StonesAndChips.xml */,
+				8C40F2C71E624B040073E4A7 /* AR.dat */,
+				8C40F2C81E624B040073E4A7 /* AR.xml */,
 				FB7A42FB1A8E376B0068CF5E /* Tarmac.dat */,
 				FB7A42FC1A8E376B0068CF5E /* Tarmac.xml */,
 			);
@@ -802,7 +808,7 @@
 				TargetAttributes = {
 					D21B07E51A1B4AA20041ECF3 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 9Z4VM84YX9;
+						DevelopmentTeam = V7MEJ473R2;
 					};
 				};
 			};
@@ -861,6 +867,7 @@
 				D2DC72BA1A8F5F9200A62FCD /* MT.png in Resources */,
 				FB7A43351A8E376B0068CF5E /* CubeWireframe.png in Resources */,
 				FB7A432E1A8E376B0068CF5E /* Tarmac.dat in Resources */,
+				8C40F2C91E624B040073E4A7 /* AR.dat in Resources */,
 				FB7A43201A8E376B0068CF5E /* CR_about.html in Resources */,
 				FB7A43421A8E376B0068CF5E /* button_main.png in Resources */,
 				FB7A43481A8E376B0068CF5E /* UD_about.html in Resources */,
@@ -894,6 +901,7 @@
 				FB7A432C1A8E376B0068CF5E /* StonesAndChips.dat in Resources */,
 				FB7A432F1A8E376B0068CF5E /* Tarmac.xml in Resources */,
 				FB7A43221A8E376B0068CF5E /* sodacan.dat in Resources */,
+				8C40F2CA1E624B040073E4A7 /* AR.xml in Resources */,
 				8F6A13C41CD8044D0010F46D /* scanline.png in Resources */,
 				FB5190C01A9F62C100729216 /* TR.png in Resources */,
 				8F467BD01D18B02E00682E4C /* Background.fragsh in Resources */,
@@ -1056,13 +1064,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				DEVELOPMENT_TEAM = V7MEJ473R2;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = ../../build/include;
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.sample.Vuforia;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.sample.Vuforia;
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1079,13 +1087,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 21;
-				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				DEVELOPMENT_TEAM = V7MEJ473R2;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = ../../build/include;
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.sample.Vuforia;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.sample.Vuforia;
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

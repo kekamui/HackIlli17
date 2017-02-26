@@ -18,9 +18,11 @@ countries.
     Vuforia::DataSet*  dataSetCurrent;
     Vuforia::DataSet*  dataSetTarmac;
     Vuforia::DataSet*  dataSetStonesAndChips;
+    Vuforia::DataSet*  dataSetRoomAndBed;
     
     BOOL switchToTarmac;
     BOOL switchToStonesAndChips;
+    BOOL switchToRoomAndBed;
     
     // menu options
     BOOL extendedTrackingEnabled;

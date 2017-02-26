@@ -234,12 +234,13 @@ countries.
 // load the data associated to the trackers
 - (bool) doLoadTrackersData {
     dataSetStonesAndChips = [self loadObjectTrackerDataSet:@"StonesAndChips.xml"];
+    dataSetRoomAndBed = [self loadObjectTrackerDataSet:@"AR.xml"];
     dataSetTarmac = [self loadObjectTrackerDataSet:@"Tarmac.xml"];
-    if ((dataSetStonesAndChips == NULL) || (dataSetTarmac == NULL)) {
+    if ((dataSetTarmac == NULL) || (dataSetStonesAndChips == NULL)|| dataSetRoomAndBed == NULL) {
         NSLog(@"Failed to load datasets");
         return NO;
     }
-    if (! [self activateDataSet:dataSetStonesAndChips]) {
+    if (! [self activateDataSet:dataSetStonesAndChips] || ! [self activateDataSet:dataSetRoomAndBed]) {
         NSLog(@"Failed to activate dataset");
         return NO;
     }
@@ -317,6 +318,10 @@ countries.
         [self activateDataSet:dataSetStonesAndChips];
         switchToStonesAndChips = NO;
     }
+    if (switchToRoomAndBed) {
+        [self activateDataSet:dataSetRoomAndBed];
+        switchToRoomAndBed = NO;
+    }
 }
 
 // Load the image tracker data set
@@ -386,6 +391,10 @@ countries.
     if (!objectTracker->destroyDataSet(dataSetStonesAndChips))
     {
         NSLog(@"Failed to destroy data set Stones and Chips.");
+    }
+    if (!objectTracker->destroyDataSet(dataSetRoomAndBed))
+    {
+        NSLog(@"Failed to destroy Room and Bed.");
     }
     
     NSLog(@"datasets destroyed");
@@ -587,12 +596,21 @@ countries.
         [self setExtendedTrackingForDataSet:dataSetCurrent start:NO];
         switchToTarmac = YES;
         switchToStonesAndChips = NO;
+        switchToRoomAndBed = NO;
         return true;
     }
     else if ([@"Stones & Chips" isEqualToString:itemName]) {
         [self setExtendedTrackingForDataSet:dataSetCurrent start:NO];
         switchToTarmac = NO;
         switchToStonesAndChips = YES;
+        switchToRoomAndBed = NO;
+        return true;
+    }
+    else if ([@"Room & Bed" isEqualToString:itemName]) {
+        [self setExtendedTrackingForDataSet:dataSetCurrent start:NO];
+        switchToTarmac = NO;
+        switchToStonesAndChips = NO;
+        switchToRoomAndBed = YES;
         return true;
     }
 
@@ -619,7 +637,7 @@ countries.
             menuVC.dismissItemName = @"Vuforia Samples";
             menuVC.backSegueId = @"BackToImageTargets";
             
-            NSLog(@"Dataset current %@", dataSetCurrent == dataSetTarmac ? @"Tarmac" : @"Stones & Chips");
+            NSLog(@"Dataset current %@", dataSetCurrent == dataSetRoomAndBed ? @"Room & Bed" : @"Tarmac");
             
             // initialize menu item values (ON / OFF)
             [menuVC setValue:extendedTrackingEnabled forMenuItem:@"Extended Tracking"];
@@ -630,10 +648,17 @@ countries.
             if (dataSetCurrent == dataSetStonesAndChips) {
                 [menuVC setValue:YES forMenuItem:@"Stones & Chips"];
                 [menuVC setValue:NO forMenuItem:@"Tarmac"];
+                [menuVC setValue:NO forMenuItem:@"Room & Bed"];
             }
-            else {
+            else if (dataSetCurrent == dataSetRoomAndBed) {
+                [menuVC setValue:NO forMenuItem:@"Tarmac"];
+                [menuVC setValue:NO forMenuItem:@"Stones & Chips"];
+                [menuVC setValue:YES forMenuItem:@"Room & Bed"];
+            }
+            else{
                 [menuVC setValue:YES forMenuItem:@"Tarmac"];
                 [menuVC setValue:NO forMenuItem:@"Stones & Chips"];
+                [menuVC setValue:NO forMenuItem:@"Room & Bed"];
             }
         }
     }
