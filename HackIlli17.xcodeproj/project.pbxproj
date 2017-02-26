@@ -380,7 +380,7 @@
 				TargetAttributes = {
 					AB3879331E61E0ED00F1CABE = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9Z4VM84YX9;
+						DevelopmentTeam = V7MEJ473R2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -545,7 +545,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				DEVELOPMENT_TEAM = V7MEJ473R2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Vuforia/build/include/";
 				INFOPLIST_FILE = HackIlli17/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -554,7 +554,7 @@
 					"$(PROJECT_DIR)/Vuforia/lib/arm",
 					"$(PROJECT_DIR)/Vuforia/build/lib/arm",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.HackIlli17;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.HackIlli17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -563,7 +563,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				DEVELOPMENT_TEAM = V7MEJ473R2;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Vuforia/build/include/";
 				INFOPLIST_FILE = HackIlli17/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -572,7 +572,7 @@
 					"$(PROJECT_DIR)/Vuforia/lib/arm",
 					"$(PROJECT_DIR)/Vuforia/build/lib/arm",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.HackIlli17;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.HackIlli17;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

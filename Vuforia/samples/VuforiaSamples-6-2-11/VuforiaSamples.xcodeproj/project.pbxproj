@@ -802,7 +802,7 @@
 				TargetAttributes = {
 					D21B07E51A1B4AA20041ECF3 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 9Z4VM84YX9;
+						DevelopmentTeam = V7MEJ473R2;
 					};
 				};
 			};
@@ -1056,13 +1056,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				DEVELOPMENT_TEAM = V7MEJ473R2;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = ../../build/include;
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.sample.Vuforia;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.Vuforia;
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1079,13 +1079,13 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 21;
-				DEVELOPMENT_TEAM = 9Z4VM84YX9;
+				DEVELOPMENT_TEAM = V7MEJ473R2;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = ../../build/include;
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = ../../build/lib/arm;
-				PRODUCT_BUNDLE_IDENTIFIER = caviar.respect.sample.Vuforia;
+				PRODUCT_BUNDLE_IDENTIFIER = caviar.yun.Vuforia;
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
